@@ -7,6 +7,9 @@ USERS = ['Alice', 'Jon', 'Mike']
 
 @user.route('/')
 def user_list():
-    return render_template('users/list.html')
+    return render_template(
+        'users/list.html',
+        users=USERS,
+    )
 
 
