@@ -6,9 +6,9 @@
 
 {% block body %}
     <h1>Users:</h1>
-    {% for user in users %}
+    {% for user_id in users %}
         <ul>
-            <li>{{user}}</li>
+            <li><a href="{{ url_for('user.get_user', pk=user_id) }}">{{ users[users_id] }}{/a}</li>
         </ul>
     {% endfor %}
 {% endblock %}
