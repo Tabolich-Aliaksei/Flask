@@ -8,7 +8,3 @@ def user_list():
     return 'Hello, user!'
 
 
-@user.route('</pk>')
-def get_user(pk: int):
-    return pk
-
